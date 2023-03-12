@@ -3,16 +3,17 @@ package data_struture;
 public class Array {
     private int[] items;
     private int count;
-//    constructure
+//    constructor
     public Array(int length){
         items = new int[length];
     }
 
-//    method print array with lenght
+//    method print array with length
     public void print(){
         for ( int i =0 ; i < count; i++){
             System.out.println(items[i]);
         }
+        System.out.println(count);
     }
 
 //    implement insert method to Array
@@ -31,4 +32,24 @@ public class Array {
 //        add item to the end array
         items[count++] = item;
     }
+
+//    implement remove Array method
+    public void removeAt(int index){
+    //  if index > length of array or index <0 --> error
+        if (index <0 || index >= count)
+            throw new IllegalArgumentException();
+        //  set the item in right index item to the left
+        for ( int i = index; i < count ; i++ ){
+                items[i] = items[i+1];
+
+        }
+        count--;
+    }
+    public int indexOf(int item){
+        for ( int i= 0 ; i < count ; i++)
+           if (items[i] == item)
+               return i;
+        return -1;
+    }
+
 }
