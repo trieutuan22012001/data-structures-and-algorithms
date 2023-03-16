@@ -1,8 +1,8 @@
 package data_struture;
 
 public class Array {
-    private int[] items;
-    private int count;
+    public int[] items;
+    public int count;
 //    constructor
     public Array(int length){
         items = new int[length];

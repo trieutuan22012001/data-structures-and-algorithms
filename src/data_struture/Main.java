@@ -4,18 +4,28 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-//        Array numbers = new Array(3);
-//        numbers.insert(10);
-//        numbers.insert(20);
-//        numbers.insert(30);
-//        numbers.insert(40);
-//        numbers.print();
-        LinkedList linkedList = new LinkedList();
-        linkedList.addLast(10);
-        linkedList.addLast(20);
-        linkedList.addLast(30);
-//        linkedList.addLast(40);
-        linkedList.removeLast();
-        System.out.println(linkedList.contains(40));
+    QueueArray queue = new QueueArray(4);
+    queue.push(1);
+    queue.push(2);
+    queue.push(3);
+    queue.push(4);
+    queue.show();
+    queue.pop();
+    queue.show();
+    queue.pop();
+    queue.show();
+    queue.pop();
+    queue.show();
+    queue.pop();
+    queue.show();
+    queue.pop();
+    queue.show();
+
+
+
+
+
+
     }
+
 }
