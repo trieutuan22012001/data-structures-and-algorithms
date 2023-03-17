@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5867d2e-c406-4af4-8e44-78047be1f5e0" name="Changes" comment="implement addfirst and removeLast method">
-      <change afterPath="$PROJECT_DIR$/src/data_struture/QueueArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_struture/StackArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_struture/StackLinklist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_struture/StackQueue.java" afterDir="false" />
+    <list default="true" id="e5867d2e-c406-4af4-8e44-78047be1f5e0" name="Changes" comment="implement stack and queue method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_struture/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_struture/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_struture/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_struture/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678712766906</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implement stack and queue method">
+      <created>1678949982663</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678949982663</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,14 +178,15 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="implement linked list" />
     <MESSAGE value="implement addfirst and removeLast method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement addfirst and removeLast method" />
+    <MESSAGE value="implement stack and queue method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement stack and queue method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/data_struture/Main.java</url>
-          <line>29</line>
+          <line>36</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
