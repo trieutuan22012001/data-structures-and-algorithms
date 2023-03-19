@@ -1,6 +1,6 @@
 package structure.pakage;
 
-public class QueueArray implements data_struture.StackQueue {
+public class QueueArray implements StackQueue {
     
     private int[] array;
     private int head;

@@ -2,7 +2,7 @@ package structure.pakage;
 
 import sun.invoke.empty.Empty;
 
-public class StackArray implements data_struture.StackQueue {
+public class StackArray implements StackQueue {
     private int[] array;
     private int SIZE;
     private int top;
