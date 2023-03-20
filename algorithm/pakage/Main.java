@@ -9,7 +9,7 @@ public class Main {
 //        System.out.println("After sorting:");
 //        sorting.prints();
 
-        int[] arr = QuickSort.generate(10,0,10);
+        int[] arr = QuickSort.generate(10,0,100);
         System.out.println("Unsorted array: " + Arrays.toString(arr));
         QuickSort.sort(arr);
         System.out.println("Sorted array: " + Arrays.toString(arr));
