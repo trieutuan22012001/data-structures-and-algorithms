@@ -18,46 +18,28 @@ public class QuickSort {
     }
     private static void quicksort(int[] array, int lowIndex, int highIndex) {
 
-        if (lowIndex >= highIndex) {
-            return;
+        if (lowIndex < highIndex) {
+            int pivot = partition(array, lowIndex, highIndex);
+            quicksort(array, lowIndex, pivot -1);
+            quicksort(array, pivot +1, highIndex );
         }
 
-        int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
-        int pivot = array[pivotIndex];
-        swap(array, pivotIndex, highIndex);
-
-        int leftPointer = partition(array, lowIndex, highIndex, pivot);
-
-        quicksort(array, lowIndex, leftPointer - 1);
-        quicksort(array, leftPointer + 1, highIndex);
 
     }
 
-    private static int partition(int[] array, int lowIndex, int highIndex, int pivot) {
-        int leftPointer = lowIndex;
-        int rightPointer = highIndex - 1;
+    private static int partition(int[] array, int lowIndex, int highIndex) {
+        int i = lowIndex -1;
+        int pivot = array[highIndex];
 
-        while (leftPointer < rightPointer) {
-
-            while (array[leftPointer] <= pivot && leftPointer < rightPointer) {
-                leftPointer++;
-            }
-
-            while (array[rightPointer] >= pivot && leftPointer < rightPointer) {
-                rightPointer--;
-            }
-
-            swap(array, leftPointer, rightPointer);
+        for (int j = lowIndex; j <= highIndex -1; j++){
+           if(array[j] < pivot){
+               i++;
+               swap(array, i, j);
+           }
         }
+        swap(array,i+1, highIndex );
+        return i +1;
 
-        if(array[leftPointer] > array[highIndex]) {
-            swap(array, leftPointer, highIndex);
-        }
-        else {
-            leftPointer = highIndex;
-        }
-
-        return leftPointer;
     }
 
     private static void swap(int[] array, int index1, int index2) {
